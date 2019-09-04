@@ -1,0 +1,6 @@
+{
+  "filters": {
+    "op":"<=",
+    "content":"foobar"
+  }
+}

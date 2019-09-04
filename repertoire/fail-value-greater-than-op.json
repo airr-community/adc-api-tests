@@ -1,0 +1,8 @@
+{
+  "filters": {
+    "op":">",
+    "content": {
+      "field":"sample.cell_number"
+    }
+  }
+}

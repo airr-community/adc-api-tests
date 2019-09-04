@@ -1,0 +1,9 @@
+{
+  "filters": {
+        "op":"=",
+        "content": {
+          "field":"subject.organism.id",
+          "value":9606
+        }
+  }
+}

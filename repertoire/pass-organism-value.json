@@ -1,0 +1,9 @@
+{
+  "filters": {
+        "op":"=",
+        "content": {
+          "field":"subject.organism.value",
+          "value":"Homo sapiens"
+        }
+  }
+}

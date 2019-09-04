@@ -1,0 +1,8 @@
+{
+  "filters": {
+    "op":"!=",
+    "content": {
+      "field":"sample.pcr_target.pcr_target_locus",
+    }
+  }
+}

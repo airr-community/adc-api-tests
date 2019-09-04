@@ -1,0 +1,9 @@
+{
+  "filters": {
+    "op":"<=",
+    "content": {
+      "field":123,
+      "value":1000
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "filters": {
+    "op":"exclude",
+    "content": {
+      "field":"sample.cell_number",
+      "value": [ 1000, 2000, 10000 ]
+    }
+  }
+}
