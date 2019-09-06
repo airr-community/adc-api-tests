@@ -7,7 +7,7 @@ This directory contains a testing code suite for the ADC API
 
 ## Test subdirectories
 
-There are two subdirectories, one each for tests against the /repertoire endpoint and the /rearrangement
+There are two subdirectories in the base level of this github repository, one each for tests against the /repertoire endpoint and the /rearrangement
 endpoint. In each subdirectory, files are named with respect to whether the test is expected to pass or
 fail, with the file name including a hint at what the test is testing against.
 
@@ -25,7 +25,7 @@ Required command line options consist of:
 
 Optional command line arguments are:
 - -v: Run in verbose mode, provided more diagnostics as to what occurred.
-- -f: Force queries to run in error conditions. For example, the coded tests for bad JSON on query file load, but in some instances you want to test that the service running the API can detect and handle the bad JSON code. -f will force the bad JSON to be sent to the service rather than detecting it as bad JSON and exiting.
+- -f: Force queries to run in error conditions. For example, the code tests for bad JSON on query file load, but in some instances you want to test that the service running the API can detect and handle the bad JSON code. -f will force the bad JSON to be sent to the service rather than detecting it as bad JSON and exiting.
 - -h Print a help message.
 
 ```
