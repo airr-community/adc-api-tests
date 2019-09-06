@@ -1,0 +1,10 @@
+{
+        "filters": {
+              "op":"=",
+              "content": {
+                "field":"d_call",
+                "value":"IGHD4-11*01"
+              }
+        },
+	"fields":["repertoire_id","d_call"]
+}

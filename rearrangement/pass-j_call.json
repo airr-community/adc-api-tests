@@ -1,0 +1,10 @@
+{
+        "filters": {
+              "op":"=",
+              "content": {
+                "field":"j_call",
+                "value":"IGHJ6*02"
+              }
+        },
+	"fields":["repertoire_id","j_call"]
+}
