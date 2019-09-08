@@ -19,7 +19,7 @@
       {
         "op":"contains",
         "content": {
-          "field":"diagnosis.disease_diagnosis",
+          "field":"subject.diagnosis.disease_diagnosis",
           "value":"autoimmune"
         }
       }
