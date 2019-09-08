@@ -3,7 +3,7 @@
     "op":"contains",
     "content": {
       "field":"sample.cell_phenotype",
-      "value":"absence of CD8"
+      "value":"CD8"
     }
   }
 }
