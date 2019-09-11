@@ -5,7 +5,7 @@ import os, ssl
 import sys
 import time
 
-def processQuery(query_url, header_dict, query_dict={}, verbose=False, force=False):
+def processQuery(query_url, header_dict, expect_pass, query_dict={}, verbose=False, force=False):
     # Build the required JSON data for the post request. The user
     # of the function provides both the header and the query data
 
@@ -31,6 +31,10 @@ def processQuery(query_url, header_dict, query_dict={}, verbose=False, force=Fal
             url_response = url_response.decode("utf-8")
 
     except urllib.error.HTTPError as e:
+        if not expect_pass:
+            if e.code == 400:
+                # correct failure
+                return json.loads('[400]')
         print('ERROR: Server could not fullfil the request to ' + query_url)
         print('ERROR: Error code = ' + str(e.code) + ', Message = ', e.read())
         return json.loads('[]')
@@ -88,6 +92,17 @@ def testAPI(base_url, entry_point, query_files, verbose, force):
 
     # Iterate over the query files
     for query_file in query_files:
+        # Expect pass or fail, first 4 letters of file name
+        expect_pass = True
+        file_code = query_file.split('/')[-1][0:4]
+        if file_code == 'pass':
+            expect_pass = True
+        elif file_code == 'fail':
+            expect_pass = False
+        else:
+            print('WARNING: Unknown pass/fail expectation, assuming pass.')
+            expect_pass = True
+
         # Open the JSON query file and read it as a python dict.
         try:
             with open(query_file, 'r') as f:
@@ -111,50 +126,44 @@ def testAPI(base_url, entry_point, query_files, verbose, force):
             print('INFO: Performing query: ' + str(query_dict))
 
         # Perform the query.
-        query_json = processQuery(query_url, header_dict, query_dict, verbose, force)
+        query_json = processQuery(query_url, header_dict, expect_pass, query_dict, verbose, force)
         if verbose:
             print('INFO: Query response: ' + str(query_json))
 
-        # Print out an error if the query failed.
-        if len(query_json) == 0:
-            print('ERROR: Query file ' + query_file + ' to ' + query_url + ' failed')
-            return 1
+        if expect_pass:
+            # Print out an error if the query failed.
+            if len(query_json) == 0:
+                print('ERROR: Query file ' + query_file + ' to ' + query_url + ' failed')
+                return 1
 
-        # Check for a correct Info object.
-        if not "Info" in query_json:
-            print("ERROR: Expected to find an 'Info' object, none found")
-            return 1
+            # Check for a correct Info object.
+            if not "Info" in query_json:
+                print("ERROR: Expected to find an 'Info' object, none found")
+                return 1
 
-        if entry_point == "rearrangement":
-            response_tag = "Rearrangement"
-        elif entry_point == "repertoire":
-            response_tag = "Repertoire"
-        else:
-            print("ERROR: I don't know how to check a '" + entry_point + "' API entry_point")
-            return 1
+            if entry_point == "rearrangement":
+                response_tag = "Rearrangement"
+            elif entry_point == "repertoire":
+                response_tag = "Repertoire"
+            else:
+                print("ERROR: I don't know how to check a '" + entry_point + "' API entry_point")
+                return 1
 
-        if not response_tag in query_json:
-            print("ERROR: Expected to find a '" + response_tag +"' object, none found")
-            return 1
+            if not response_tag in query_json:
+                print("ERROR: Expected to find a '" + response_tag +"' object, none found")
+                return 1
         
-        query_response_array = query_json[response_tag]
-        num_responses = len(query_response_array)
-        print("INFO: Received " + str(num_responses) + " " + entry_point + "s from query")
+            query_response_array = query_json[response_tag]
+            num_responses = len(query_response_array)
+            print("INFO: Received " + str(num_responses) + " " + entry_point + "s from query")
+            print('PASS: Query file ' + query_file + ' to ' + query_url + ' OK')
+        else:
+            # Print out an error if the query failed.
+            if len(query_json) == 0:
+                print('ERROR: Query file ' + query_file + ' to ' + query_url + ' failed')
+                return 1
 
-        # Check for the correct type of response data depending on entry point
-        #if 
-        # Extract the "Rearrangement" component of the JSON response.
-        #rearrangement_json = query_json["Rearrangement"]
-        # Because we aggregated via repertoire_id, we need to iterate over the
-        # repertoires returned and sum up their count.
-        #total = 0
-        #for repertoire in rearrangement_json:
-        #   total = total + repertoire['count']
-        # Store the total value in our data dictionary for this key.
-        #data.update({value:total})
-        #graph_total = graph_total + total
-        #print("Total for " + query_key + "/" + value + " = " + str(total))
-        print('PASS: Query file ' + query_file + ' to ' + query_url + ' OK')
+            print('PASS: Query file ' + query_file + ' to ' + query_url + ' OK')
 
     return 0
 
