@@ -48,7 +48,7 @@ docker run -v $PWD:/work -it airrc/airr-standards bash
 cd /work
 ```
 
-## Running the multiple tests with ADCtest script
+## Running multiple tests with ADCtest script
 
 The bash script ADCtest uses the python code above to run a set of tests against a given API. The
 command line arguments to the code are similar, with the two following exceptions:
@@ -56,7 +56,7 @@ command line arguments to the code are similar, with the two following exception
 - The -v and -f command line arguments can be interspersed between the file to turn on and off the verbosity and force flags.
 
 ```
-$ src/ADCtest.sh https://vdjserver.org/airr/v1 repertoire repertoire/pass*.json
+$ src/ADCtest.sh https://localhost/airr/v1 repertoire repertoire/pass*.json
 
 Running test repertoire/pass-all.json
 PASS: Query file repertoire/pass-all.json to https://vdjserver.org/airr/v1/repertoire OK
@@ -78,7 +78,7 @@ SUMMARY: All tests passed!!!
 
 The python code can be run as follows:
 ```
-$ python3 src/test_airr_api.py https://airr-api.ireceptor.org/airr/v1 repertoire repertoire/pass-all.json
+$ python3 src/test_airr_api.py https://localhost/airr/v1 repertoire repertoire/pass-all.json
 PASS: Query file repertoire/pass-all.json to https://airr-api.ireceptor.org/airr/v1/repertoire OK
 ```
 Required command line options consist of:
