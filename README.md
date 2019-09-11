@@ -6,8 +6,15 @@ File issues at the top-level [ADC API github repository](https://github.com/airr
 
 # Testing approach
 
+- Load test dataset into repository
 - Python code to run a single test
 - Bash script to run a suite of tests and report results.
+
+## Loading Test Dataset into Repository
+
+The tests expect a specific dataset to be loaded into the repository. Queries are designed to
+return specific data records to test that query construction and operation is working as
+expected by the API service.
 
 ## Test subdirectories
 

@@ -16,5 +16,8 @@ if [ -z $MONGO_DBDIR ]; then
     exit
 fi
 
-bash load_repertoire.sh
-bash load_rearrangement.sh
+# import the repertoires
+echo "Loading repertoires"
+docker run -v $PWD:/work -v $MONGO_DBDIR:/work_data -it airrc/adc-api-js-mongodb python3 /work/import_repertoire.py
+docker exec -it adc-api-mongo mongo --authenticationDatabase admin v1airr /data/db/tmp/repertoire.js
+docker run -v $PWD:/work -v $MONGO_DBDIR:/work_data -it airrc/adc-api-js-mongodb rm -rf /work_data/tmp
