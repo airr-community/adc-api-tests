@@ -46,9 +46,11 @@ fout = open(fname, 'w')
 fout.write(header)
 
 # TODO: This should use the AIRR python load_repertoire()
-reps = yaml.safe_load(open('/work/florian.airr.yaml', 'r', encoding='utf-8'))
+data = airr.load_repertoire('/work/florian.airr.json')
+reps = data['Repertoire']
+#reps = yaml.safe_load(open('/work/florian.airr.yaml', 'r', encoding='utf-8'))
 
-for r in reps['Repertoire']:
+for r in reps:
     fout.write('db.repertoire.deleteOne({"repertoire_id":"' + r['repertoire_id'] + '"});\n');
     fout.write('db.repertoire.insertOne(' + json.dumps(r) + ');\n')
 fout.close()
