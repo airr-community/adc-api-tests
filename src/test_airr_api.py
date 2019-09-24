@@ -4,6 +4,7 @@ import json
 import os, ssl
 import sys
 import time
+import yaml
 
 def processQuery(query_url, header_dict, expect_pass, query_dict={}, verbose=False, force=False):
     # Build the required JSON data for the post request. The user
@@ -87,6 +88,8 @@ def testAPI(base_url, entry_point, query_files, verbose, force):
     # Get the HTTP header information (in the form of a dictionary)
     header_dict = getHeaderDict()
 
+    gold_results = yaml.safe_load(open(entry_point + '/gold.yaml', 'r'))
+
     # Build the full URL combining the URL and the entry point.
     query_url = base_url+'/'+entry_point
 
@@ -159,6 +162,18 @@ def testAPI(base_url, entry_point, query_files, verbose, force):
         
             query_response_array = query_json[response_tag]
             num_responses = len(query_response_array)
+
+            query_name = query_file.split('/')[-1]
+            if gold_results.get(query_name):
+                if gold_results[query_name].get('records'):
+                    if num_responses != int(gold_results[query_name]['records']):
+                        print("ERROR: Expected " + str(gold_results[query_name]['records']) + " != " + str(num_responses) + " records")
+                        return 1
+                else:
+                    print('WARNING: No expected records specified for ' + query_name)
+            else:
+                print('WARNING: No gold expectation for ' + query_name)
+
             print("INFO: Received " + str(num_responses) + " " + response_tag + "s from query")
             print('PASS: Query file ' + query_file + ' to ' + query_url + ' OK')
         else:

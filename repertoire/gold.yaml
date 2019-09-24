@@ -1,0 +1,54 @@
+pass-all.json:
+  records: 60
+pass-boolean-equals-op.json:
+  records: 20
+pass-boolean-not-equals-op.json:
+  records: 40
+pass-contains-op.json:
+  records: 10
+pass-equals-op.json:
+  records: 40
+pass-exclude-op.json:
+  records: 57
+pass-facets1_repertoire.json:
+  records: 2
+pass-facets2_repertoire.json:
+  records: 10
+pass-float-from.json:
+  records: 50
+pass-float-size.json:
+  records: 10
+pass-greater-than-equals-op.json:
+  records: 20
+pass-greater-than-op.json:
+  records: 10
+pass-in-op.json:
+  records: 3
+pass-is-op.json:
+  records: 30
+pass-less-than-equals-op.json:
+  records: 20
+pass-less-than-op.json:
+  records: 10
+pass-not-equals-op.json:
+  records: 20
+pass-not-op.json:
+  records: 30
+pass-number-equals-op.json:
+  records: 10
+pass-number-exclude-op.json:
+  records: 40
+pass-number-in-op.json:
+  records: 20
+pass-number-not-equals-op.json:
+  records: 50
+pass-number-contains-op.json:
+  records: 40
+pass-and-op.json:
+  records: 10
+pass-and-or-op.json:
+  records: 10
+pass-deep-and-op.json:
+  records: 10
+pass-or-op.json:
+  records: 30
