@@ -50,7 +50,7 @@ while [ "$1" != "" ]; do
     echo "Running test $1"
     filename="$1"
     # Run the python code (python 3 required) to test the API query
-    python3 $SCRIPT_DIR/$PYTHON_PROG $verbosity $adc_url $entry_point $filename
+    python3 $SCRIPT_DIR/$PYTHON_PROG -f $verbosity $adc_url $entry_point $filename
     error_code=$?
     if [ $error_code -ne 0 ]
     then

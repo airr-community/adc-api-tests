@@ -149,13 +149,17 @@ def testAPI(base_url, entry_point, query_files, verbose, force):
                 print("ERROR: I don't know how to check a '" + entry_point + "' API entry_point")
                 return 1
 
+            # check if facets query
+            if query_dict.get('facets'):
+                response_tag = "Facet"
+
             if not response_tag in query_json:
                 print("ERROR: Expected to find a '" + response_tag +"' object, none found")
                 return 1
         
             query_response_array = query_json[response_tag]
             num_responses = len(query_response_array)
-            print("INFO: Received " + str(num_responses) + " " + entry_point + "s from query")
+            print("INFO: Received " + str(num_responses) + " " + response_tag + "s from query")
             print('PASS: Query file ' + query_file + ' to ' + query_url + ' OK')
         else:
             # Print out an error if the query failed.
