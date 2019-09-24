@@ -1,0 +1,6 @@
+{
+  "filters": {
+    "op":"contains",
+    "content": "foobar"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "filters": {
+    "op":"in",
+    "content": {
+      "field":"repertoire_id"
+    }
+  }
+}

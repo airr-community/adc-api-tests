@@ -1,0 +1,88 @@
+{
+  "filters": {
+    "op":"and",
+    "content": [
+      {
+	  "op":"and",
+	  "content": [
+	      {
+		  "op":"<",
+		  "content": {
+		      "field":"sample.cell_number",
+		      "value":10000
+		  }
+	      },
+	      {
+		  "op":"=",
+		  "content": {
+		      "field":"sample.pcr_target.pcr_target_locus",
+		      "value":"IGH"
+		  }
+	      }
+	  ]
+      },
+      {
+	  "op":"and",
+	  "content": [
+	      {
+		  "op":"<",
+		  "content": {
+		      "field":"sample.cell_number",
+		      "value":10000
+		  }
+	      },
+	      {
+		  "op":"=",
+		  "content": {
+		      "field":"sample.pcr_target.pcr_target_locus",
+		      "value":"IGH"
+		  }
+	      },
+	      {
+    "op":"and",
+    "content": [
+      {
+	  "op":"and",
+	  "content": [
+	      {
+		  "op":"<",
+		  "content": {
+		      "field":"sample.cell_number",
+		      "value":10000
+		  }
+	      },
+	      {
+		  "op":"=",
+		  "content": {
+		      "field":"sample.pcr_target.pcr_target_locus",
+		      "value":"IGH"
+		  }
+	      }
+	  ]
+      },
+      {
+	  "op":"and",
+	  "content": [
+	      {
+		  "op":"<",
+		  "content": {
+		      "field":"sample.cell_number",
+		      "value":10000
+		  }
+	      },
+	      {
+		  "op":"=",
+		  "content": {
+		      "field":"sample.pcr_target.pcr_target_locus",
+		      "value":"IGH"
+		  }
+	      }
+	  ]
+      }
+    ]
+	      }
+	  ]
+      }
+    ]
+  }
+}

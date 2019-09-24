@@ -1,0 +1,6 @@
+{
+  "filters": {
+    "op":"or",
+    "content": "foobar"
+  }
+}
