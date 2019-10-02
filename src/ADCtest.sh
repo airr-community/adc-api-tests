@@ -29,7 +29,17 @@ shift
 # For the remainder of command line parameters, treat each as a JSON query.
 let "error_count=0"
 let "total_count=0"
+gold=""
+
 while [ "$1" != "" ]; do
+    # Handle -g to turn off gold data testing.
+    if [ "$1" == "-g" ] 
+    then
+        gold="-g"
+        shift
+        continue
+    fi
+
     # Handle -v. It essentially toggles verbosity on and off. So you can have
     # something like -v v1.json v2.json -v q1.json q2.json where v1 and v2
     # are processed with verbosity on and q1 and q2 are processed quitely.
@@ -50,7 +60,7 @@ while [ "$1" != "" ]; do
     echo "Running test $1"
     filename="$1"
     # Run the python code (python 3 required) to test the API query
-    python3 $SCRIPT_DIR/$PYTHON_PROG -f $verbosity $adc_url $entry_point $filename
+    python3 $SCRIPT_DIR/$PYTHON_PROG -f $gold $verbosity $adc_url $entry_point $filename
     error_code=$?
     if [ $error_code -ne 0 ]
     then

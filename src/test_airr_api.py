@@ -82,7 +82,7 @@ def initHTTP():
         getattr(ssl, '_create_unverified_context', None)): 
         ssl._create_default_https_context = ssl._create_unverified_context
 
-def testAPI(base_url, entry_point, query_files, verbose, force):
+def testAPI(base_url, entry_point, query_files, verbose, force, gold_disabled):
     # Ensure our HTTP set up has been done.
     initHTTP()
     # Get the HTTP header information (in the form of a dictionary)
@@ -164,15 +164,16 @@ def testAPI(base_url, entry_point, query_files, verbose, force):
             num_responses = len(query_response_array)
 
             query_name = query_file.split('/')[-1]
-            if gold_results.get(query_name):
-                if gold_results[query_name].get('records'):
-                    if num_responses != int(gold_results[query_name]['records']):
-                        print("ERROR: Expected " + str(gold_results[query_name]['records']) + " != " + str(num_responses) + " records")
-                        return 1
+            if not gold_disabled:
+                if gold_results.get(query_name):
+                    if gold_results[query_name].get('records'):
+                        if num_responses != int(gold_results[query_name]['records']):
+                            print("ERROR: Expected " + str(gold_results[query_name]['records']) + " != " + str(num_responses) + " records")
+                            return 1
+                    else:
+                        print('WARNING: No expected records specified for ' + query_name)
                 else:
-                    print('WARNING: No expected records specified for ' + query_name)
-            else:
-                print('WARNING: No gold expectation for ' + query_name)
+                    print('WARNING: No gold expectation for ' + query_name)
 
             print("INFO: Received " + str(num_responses) + " " + response_tag + "s from query")
             print('PASS: Query file ' + query_file + ' to ' + query_url + ' OK')
@@ -206,6 +207,12 @@ def getArguments():
         action="store_const",
         const=True,
         help="Force sending bad JSON even when the JSON can't be loaded.")
+    # Turn off gold standard query result testing
+    parser.add_argument(
+        "-g",
+        "--golddisabled",
+        action="store_true",
+        help="Disable query result testing against the gold standard. Useful when testing an API that does not have the gold standard data set loaded.")
     # Verbosity flag
     parser.add_argument(
         "-v",
@@ -224,7 +231,7 @@ if __name__ == "__main__":
     # Split the comma separated input string.
     query_files = options.query_files.split(',')
     # Perform the query analysis, gives us back a dictionary.
-    error_code = testAPI(options.base_url, options.entry_point, query_files, options.verbose, options.force)
+    error_code = testAPI(options.base_url, options.entry_point, query_files, options.verbose, options.force, options.golddisabled)
     # Return success
     sys.exit(error_code)
 
