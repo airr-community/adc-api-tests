@@ -1,0 +1,20 @@
+{
+  "filters": {
+    "op": "in",
+    "content": {
+      "field": "repertoire_id",
+      "value": [
+        "5338391595746455065-242ac11c-0001-012",
+        "9084118473933975065-242ac11c-0001-012"
+      ]
+    }
+  },
+  "from": 0,
+  "size": 10,
+  "fields": [
+    "v_call",
+    "d_call",
+    "j_call",
+    "junction_aa"
+  ]
+}

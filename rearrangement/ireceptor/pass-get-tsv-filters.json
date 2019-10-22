@@ -1,0 +1,25 @@
+{
+  "filters": {
+    "op": "and",
+    "content": [
+      {
+        "op": "contains",
+        "content": {
+          "field": "d_call",
+          "value": "IGHD4-11*01"
+        }
+      },
+      {
+        "op": "in",
+        "content": {
+          "field": "repertoire_id",
+          "value": [
+            "5338391595746455065-242ac11c-0001-012",
+            "9084118473933975065-242ac11c-0001-012"
+          ]
+        }
+      }
+    ]
+  },
+  "format": "tsv"
+}
