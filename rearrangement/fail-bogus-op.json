@@ -1,0 +1,9 @@
+{
+  "filters": {
+    "op":"bogus",
+    "content": {
+      "field":"locus",
+      "value":"TRB"
+    }
+  }
+}

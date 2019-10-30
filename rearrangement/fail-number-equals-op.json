@@ -1,0 +1,9 @@
+{
+  "filters": {
+    "op":"=",
+    "content": {
+      "field":"locus",
+      "value":1000
+    }
+  }
+}
