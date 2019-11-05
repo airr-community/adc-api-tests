@@ -61,6 +61,7 @@ The bash script ADCtest uses the python code above to run a set of tests against
 command line arguments to the code are similar, with the two following exceptions:
 - A list of files can be given as a suite of tests to run
 - The -v and -f command line arguments can be interspersed between the file to turn on and off the verbosity and force flags.
+- The -g command line argument can be used to disable the gold standard testing (see below).
 
 ```
 $ src/ADCtest.sh https://localhost/airr/v1 repertoire repertoire/pass*.json
@@ -112,5 +113,6 @@ optional arguments:
   -h, --help     show this help message and exit
   -f, --force    Force sending bad JSON even when the JSON can't be loaded.
   -v, --verbose  Run the program in verbose mode.
+  -g, --golddisabled  Disable query result testing against the gold standard. Useful when testing an API that does not have the gold standard data set loaded.
 ```
 
