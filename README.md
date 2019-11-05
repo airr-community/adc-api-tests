@@ -97,6 +97,7 @@ Optional command line arguments are:
 - -v: Run in verbose mode, provided more diagnostics as to what occurred.
 - -f: Force queries to run in error conditions. For example, the code tests for bad JSON on query file load, but in some instances you want to test that the service running the API can detect and handle the bad JSON code. -f will force the bad JSON to be sent to the service rather than detecting it as bad JSON and exiting.
 - -h Print a help message.
+- -g Disable query result testing against the gold standard. Useful when testing an API that does not have the gold standard data set loaded.
 
 ```
 $ python test_airr_api.py -h
