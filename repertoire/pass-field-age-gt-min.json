@@ -1,0 +1,9 @@
+{
+  "filters": {
+        "op":">=",
+        "content": {
+          "field":"subject.age_min",
+          "value":6
+        }
+  }
+}

@@ -52,3 +52,5 @@ pass-deep-and-op.json:
   records: 10
 pass-or-op.json:
   records: 30
+pass-field-age-exact.json:
+  records: 2
