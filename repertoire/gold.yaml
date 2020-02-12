@@ -53,4 +53,12 @@ pass-deep-and-op.json:
 pass-or-op.json:
   records: 30
 pass-field-age-exact.json:
-  records: 2
+  records: 12
+pass-field-age-gt-min.json:
+  records: 36
+pass-field-age-gte-min.json:
+  records: 48
+pass-field-age-interval.json:
+  records: 30
+pass-field-age-point.json:
+  records: 12
