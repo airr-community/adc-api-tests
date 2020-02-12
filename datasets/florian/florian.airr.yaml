@@ -41,7 +41,7 @@ Repertoire:
         value: Homo sapiens
       sex: F
       age_min: 27
-      age_max: 27
+      age_max: 37
       age_unit:
         id: "UO_0000036"
         value: "year"
@@ -98,7 +98,7 @@ Repertoire:
         value: Homo sapiens
       sex: F
       age_min: 27
-      age_max: 27
+      age_max: 37
       age_unit:
         id: "UO_0000036"
         value: "year"
@@ -155,7 +155,7 @@ Repertoire:
         value: Homo sapiens
       sex: F
       age_min: 27
-      age_max: 27
+      age_max: 37
       age_unit:
         id: "UO_0000036"
         value: "year"
@@ -208,7 +208,7 @@ Repertoire:
         value: Homo sapiens
       sex: F
       age_min: 27
-      age_max: 27
+      age_max: 37
       age_unit:
         id: "UO_0000036"
         value: "year"
@@ -262,7 +262,7 @@ Repertoire:
         value: Homo sapiens
       sex: F
       age_min: 27
-      age_max: 27
+      age_max: 37
       age_unit:
         id: "UO_0000036"
         value: "year"
@@ -315,7 +315,7 @@ Repertoire:
         value: Homo sapiens
       sex: F
       age_min: 27
-      age_max: 27
+      age_max: 37
       age_unit:
         id: "UO_0000036"
         value: "year"
