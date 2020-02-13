@@ -3,7 +3,7 @@
         "op":">=",
         "content": {
           "field":"subject.age_min",
-          "value":6
+          "value":75
         }
   }
 }
