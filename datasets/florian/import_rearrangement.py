@@ -1,5 +1,5 @@
 #
-# This script is VDJServer specific.
+# This script is specific to the ADC API reference implementation.
 # This script is specific to this dataset.
 #
 # This script does not directly import the data
@@ -35,8 +35,9 @@ def getConfig():
 
 # main entry
 if (__name__=="__main__"):
-    parser = argparse.ArgumentParser(description='Load AIRR rearrangements into VDJServer data repository.')
+    parser = argparse.ArgumentParser(description='Load AIRR rearrangements into ADC API data repository.')
     parser.add_argument('repertoire_id', type=str, help='Repertoire identifier for the rearrangements')
+    parser.add_argument('data_processing_id', type=str, help='Data processing identifier for the rearrangements')
     parser.add_argument('rearrangement_file', type=str, help='Rearrangement AIRR TSV file name')
     args = parser.parse_args()
 
@@ -59,7 +60,7 @@ if (__name__=="__main__"):
         fout.write(header)
 
         # delete any existing records
-        fout.write('db.rearrangement.deleteMany({"repertoire_id":"' + args.repertoire_id + '"});\n');
+        fout.write('db.rearrangement.deleteMany({"repertoire_id":"' + args.repertoire_id + '","data_processing_id":"' + args.data_processing_id + '"});\n');
 
         seqCount = 0
         for row in reader:
@@ -67,6 +68,10 @@ if (__name__=="__main__"):
                 row['repertoire_id'] = args.repertoire_id
             if len(row['repertoire_id']) == 0:
                 row['repertoire_id'] = args.repertoire_id
+            if row.get('data_processing_id') is None:
+                row['data_processing_id'] = args.data_processing_id
+            if len(row['data_processing_id']) == 0:
+                row['data_processing_id'] = args.data_processing_id
 
             fout.write('var ret = db.rearrangement.insertOne(' + json.dumps(row) + ');\n')
             fout.write('db.rearrangement.updateOne({"_id":ret["insertedId"]},{$set:{"rearrangement_id":ret["insertedId"].str}});\n')

@@ -1,8 +1,9 @@
 {
   "filters": {
         "op":"and", "content": [
-            { "op":"=", "content": { "field":"subject.age_min", "value":6 }},
-            { "op":"=", "content": { "field":"subject.age_max", "value":6 }}
+            { "op":"=", "content": { "field":"subject.age_min", "value":24 }},
+            { "op":"=", "content": { "field":"subject.age_max", "value":24 }},
+            { "op":"=", "content": { "field":"subject.age_unit.id", "value":"UO_0000036" }}
         ]
   }
 }

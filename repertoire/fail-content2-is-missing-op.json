@@ -1,0 +1,6 @@
+{
+  "filters": {
+    "op":"is missing",
+    "content":"foobar"
+  }
+}
