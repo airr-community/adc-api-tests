@@ -3,7 +3,7 @@
     "op":"!=",
     "content": {
       "field":"data_processing.primary_annotation",
-      "value":true
+      "value":false
     }
   }
 }

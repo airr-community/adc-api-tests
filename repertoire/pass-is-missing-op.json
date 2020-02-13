@@ -1,0 +1,8 @@
+{
+  "filters": {
+    "op":"is missing",
+    "content": {
+      "field":"sample.cell_number"
+    }
+  }
+}

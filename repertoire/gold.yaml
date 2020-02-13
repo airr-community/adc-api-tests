@@ -26,6 +26,8 @@ pass-in-op.json:
   records: 3
 pass-is-op.json:
   records: 30
+pass-is-missing-op.json:
+  records: 30
 pass-less-than-equals-op.json:
   records: 20
 pass-less-than-op.json:
@@ -33,6 +35,8 @@ pass-less-than-op.json:
 pass-not-equals-op.json:
   records: 20
 pass-not-op.json:
+  records: 30
+pass-not-missing-op.json:
   records: 30
 pass-number-equals-op.json:
   records: 10

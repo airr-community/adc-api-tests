@@ -1,0 +1,8 @@
+{
+  "filters": {
+    "op":"is missin",
+    "content": {
+      "field":123
+    }
+  }
+}
