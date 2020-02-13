@@ -1,6 +1,6 @@
 {
   "filters": {
-    "op":"is missin",
+    "op":"is missing",
     "content":"foobar"
   }
 }
