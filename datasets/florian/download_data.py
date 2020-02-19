@@ -9,6 +9,8 @@
 
 import requests
 import os
+
+directory='/mnt/data/florian'
 vdjserver_api='https://vdjserver.org/api/v1'
 
 # The VDJServer public project uuid
@@ -21,11 +23,15 @@ tcell_file='2478797497345708521-242ac119-0001-012'
 tcell_job='d097e851-c2ac-4bc9-89ca-93845f3cfbc0-007'
 
 def download_file(project_uuid, file_uuid, filename):
+    print(filename)
     url = vdjserver_api + '/projects/' + project_uuid + '/postit/' + file_uuid
+    print(url)
     resp = requests.get(url)
     resp.raise_for_status()
     obj = resp.json()
+    print(obj)
     href = obj['result']['_links']['self']['href']
+    print(href)
     with requests.get(href, stream=True) as r:
         r.raise_for_status()
         print("Downloading: " + href)
@@ -38,16 +44,16 @@ def download_file(project_uuid, file_uuid, filename):
 
 # B-cell data
 # generate posit then download data
-download_file(project, bcell_file, '/work/data.zip')
-os.system("cd /work && unzip /work/data.zip")
-os.system("rm -f /work/data.zip")
-os.system("cd /work/" + bcell_job + " && ls *.airr.tsv.zip | xargs -n 1 unzip")
-os.system("chmod -R a+rw /work/" + bcell_job);
+download_file(project, bcell_file, directory + '/data.zip')
+os.system("cd " + directory + " && unzip " + direcotry + "/data.zip")
+os.system("rm -f " + directory + "/data.zip")
+os.system("cd " + directory + "/" + bcell_job + " && ls *.airr.tsv.zip | xargs -n 1 unzip")
+os.system("chmod -R a+rw " + directory + "/" + bcell_job);
 
 # T-cell data
 # generate posit then download data
-download_file(project, tcell_file, '/work/data.zip')
-os.system("cd /work && unzip /work/data.zip")
-os.system("rm -f /work/data.zip")
-os.system("cd /work/" + tcell_job + " && ls *.airr.tsv.zip | xargs -n 1 unzip")
-os.system("chmod -R a+rw /work/" + tcell_job);
+download_file(project, tcell_file, direcotry + '/data.zip')
+os.system("cd " + directory + " && unzip " + directory + "/data.zip")
+os.system("rm -f " + directory + "/data.zip")
+os.system("cd " + directory + "/" + tcell_job + " && ls *.airr.tsv.zip | xargs -n 1 unzip")
+os.system("chmod -R a+rw " + directory + "/" + tcell_job);
