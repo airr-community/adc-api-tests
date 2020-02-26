@@ -3,6 +3,6 @@ pass-greater-than-equals-op.json:
 pass-greater-than-op.json:
   records: 698
 pass-less-than-equals-op.json:
-  records: 336
-pass-less-than-op.json:
   records: 566
+pass-less-than-op.json:
+  records: 336
