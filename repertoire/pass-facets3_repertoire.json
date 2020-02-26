@@ -1,0 +1,10 @@
+{
+    "filters": {
+        "op":"=",
+        "content": {
+          "field":"subject.sex",
+          "value":"F"
+        }
+    },
+    "facets":"repertoire_id"
+}
