@@ -14,9 +14,9 @@ pass-facets1_repertoire.json:
   records: 2
 pass-facets2_repertoire.json:
   records: 10
-pass-from.json:
+pass-int-from.json:
   records: 50
-pass-size.json:
+pass-int-size.json:
   records: 10
 pass-greater-than-equals-op.json:
   records: 20
