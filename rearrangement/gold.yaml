@@ -8,5 +8,7 @@ pass-less-than-op.json:
   records: 336
 pass-junction_aa.json:
   records: 60
+pass-all-facets.json:
+  records: 60
 pass-facets.json:
   records: 6
