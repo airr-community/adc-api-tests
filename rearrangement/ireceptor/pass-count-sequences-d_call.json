@@ -1,0 +1,10 @@
+{
+  "filters": {
+    "op": "contains",
+    "content": {
+      "field": "d_call",
+      "value": "IGHD4-11*01"
+    }
+  },
+  "facets": "repertoire_id"
+}
