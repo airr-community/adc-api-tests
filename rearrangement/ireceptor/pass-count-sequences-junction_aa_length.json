@@ -1,0 +1,10 @@
+{
+  "filters": {
+    "op": "=",
+    "content": {
+      "field": "junction_aa_length",
+      "value": 12
+    }
+  },
+  "facets": "repertoire_id"
+}

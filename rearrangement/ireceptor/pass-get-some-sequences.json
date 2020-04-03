@@ -10,11 +10,5 @@
     }
   },
   "from": 0,
-  "size": 10,
-  "fields": [
-    "v_call",
-    "d_call",
-    "j_call",
-    "junction_aa"
-  ]
+  "size": 10
 }

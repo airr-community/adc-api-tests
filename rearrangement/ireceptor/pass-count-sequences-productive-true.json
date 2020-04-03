@@ -1,0 +1,10 @@
+{
+  "filters": {
+    "op": "=",
+    "content": {
+      "field": "productive",
+      "value": true
+    }
+  },
+  "facets": "repertoire_id"
+}

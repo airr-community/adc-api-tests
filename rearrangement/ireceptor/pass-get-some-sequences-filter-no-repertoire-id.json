@@ -1,0 +1,11 @@
+{
+  "filters": {
+    "op": "contains",
+    "content": {
+      "field": "junction_aa",
+      "value": "CARAGSGW"
+    }
+  },
+  "from": 0,
+  "size": 10
+}
