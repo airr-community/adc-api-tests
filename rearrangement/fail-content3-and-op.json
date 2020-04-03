@@ -1,0 +1,14 @@
+{
+  "filters": {
+    "op":"and",
+    "content": [
+      {
+        "op":"=",
+        "content": {
+          "field":"locus",
+          "value":"IGH"
+        }
+      }
+    ]
+  }
+}

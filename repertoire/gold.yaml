@@ -14,9 +14,9 @@ pass-facets1_repertoire.json:
   records: 2
 pass-facets2_repertoire.json:
   records: 10
-pass-float-from.json:
+pass-int-from.json:
   records: 50
-pass-float-size.json:
+pass-int-size.json:
   records: 10
 pass-greater-than-equals-op.json:
   records: 20
@@ -26,6 +26,8 @@ pass-in-op.json:
   records: 3
 pass-is-op.json:
   records: 30
+pass-is-missing-op.json:
+  records: 30
 pass-less-than-equals-op.json:
   records: 20
 pass-less-than-op.json:
@@ -33,6 +35,8 @@ pass-less-than-op.json:
 pass-not-equals-op.json:
   records: 20
 pass-not-op.json:
+  records: 30
+pass-not-missing-op.json:
   records: 30
 pass-number-equals-op.json:
   records: 10
@@ -42,8 +46,6 @@ pass-number-in-op.json:
   records: 20
 pass-number-not-equals-op.json:
   records: 50
-pass-number-contains-op.json:
-  records: 40
 pass-and-op.json:
   records: 10
 pass-and-or-op.json:
@@ -52,3 +54,13 @@ pass-deep-and-op.json:
   records: 10
 pass-or-op.json:
   records: 30
+pass-field-age-exact.json:
+  records: 12
+pass-field-age-gt-min.json:
+  records: 36
+pass-field-age-gte-min.json:
+  records: 48
+pass-field-age-interval.json:
+  records: 30
+pass-field-age-point.json:
+  records: 12

@@ -1,0 +1,9 @@
+{
+  "filters": {
+    "op":"contains",
+    "content": {
+      "field":123,
+      "value":"absence of CD8"
+    }
+  }
+}

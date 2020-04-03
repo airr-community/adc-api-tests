@@ -1,0 +1,9 @@
+{
+  "filters": {
+    "op":"!=",
+    "content": {
+      "field":"study.keywords_study",
+      "value":"contains_ig"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "filters": {
+    "op":"or",
+    "content": [
+      "foo", "bar"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "filters": {
+    "op":"is not missing",
+    "content": {
+      "field":123
+    }
+  }
+}

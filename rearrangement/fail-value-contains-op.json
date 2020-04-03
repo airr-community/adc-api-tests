@@ -2,8 +2,7 @@
   "filters": {
     "op":"contains",
     "content": {
-      "field":"sample.cell_phenotype",
-      "value":45
+      "field":"repertoire_id"
     }
   }
 }

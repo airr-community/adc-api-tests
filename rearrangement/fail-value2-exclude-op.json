@@ -1,0 +1,9 @@
+{
+  "filters": {
+    "op":"exclude",
+    "content": {
+      "field":"repertoire_id",
+      "value": 123
+    }
+  }
+}

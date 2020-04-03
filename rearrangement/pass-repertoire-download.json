@@ -1,0 +1,11 @@
+{
+        "filters": {
+              "op":"=",
+              "content": {
+                "field":"repertoire_id",
+                "value":"7"
+              }
+        },
+        "format":"tsv"
+
+}

@@ -1,0 +1,8 @@
+{
+  "filters": {
+    "content": {
+      "field":"locus",
+      "value":"TRB"
+    }
+  }
+}

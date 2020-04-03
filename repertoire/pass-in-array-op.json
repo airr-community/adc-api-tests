@@ -1,0 +1,12 @@
+{
+  "filters": {
+    "op":"in",
+    "content": {
+      "field":"study.keywords_study",
+      "value": [
+          "contains_tcr",
+          "contains_ig"
+      ]
+    }
+  }
+}
