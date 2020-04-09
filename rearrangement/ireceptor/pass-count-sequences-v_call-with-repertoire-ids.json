@@ -6,7 +6,7 @@
         "op": "contains",
         "content": {
           "field": "v_call",
-          "value": "IGHV4-34*01"
+          "value": "TRBV20-1*02"
         }
       },
       {
@@ -21,5 +21,5 @@
       }
     ]
   },
-  "facets": "repertoire_id"
+  "facets":"repertoire_id"
 }
