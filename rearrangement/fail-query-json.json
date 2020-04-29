@@ -5,7 +5,7 @@
       {
         "op":"contains",
         "content": 
-          "field":"rearrangement_id",
+          "field":"sequence_id",
           "value":"TW0"
         }
       },
@@ -20,5 +20,5 @@
   },
   "from":10,
   "size":5,
-  "fields":["repertoire_id", "rearrangement_id"]
+  "fields":["repertoire_id", "sequence_id"]
 }
