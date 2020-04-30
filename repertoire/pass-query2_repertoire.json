@@ -19,7 +19,7 @@
       {
         "op":"contains",
         "content": {
-          "field":"subject.diagnosis.disease_diagnosis",
+          "field":"subject.diagnosis.disease_diagnosis.value",
           "value":"carcinoma"
         }
       }
