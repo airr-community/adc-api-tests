@@ -6,7 +6,7 @@ import sys
 import time
 import yaml
 
-def processQuery(query_url, header_dict, expect_pass, query_dict={}, verbose=False, force=False):
+def processQuery(query_url, header_dict, expect_pass, query_dict={}, verbose=False, force=False, expect_format='json'):
     # Build the required JSON data for the post request. The user
     # of the function provides both the header and the query data
 
@@ -49,6 +49,10 @@ def processQuery(query_url, header_dict, expect_pass, query_dict={}, verbose=Fal
         return json.loads('[]')
 
     # Convert the response to JSON so we can process it easily.
+    if expect_format == 'tsv':
+        # TODO: we should probably try to parse when TSV data is returned
+        return url_response
+
     try:
         json_data = json.loads(url_response)
     except json.decoder.JSONDecodeError as error:
@@ -106,6 +110,13 @@ def testAPI(base_url, entry_point, query_files, verbose, force, gold_disabled):
             print('WARNING: Unknown pass/fail expectation, assuming pass.')
             expect_pass = True
 
+        query_name = query_file.split('/')[-1]
+        expect_format = json
+        if not gold_disabled:
+            if gold_results.get(query_name):
+                if gold_results[query_name].get('format'):
+                    expect_format = gold_results[query_name]['format']
+
         # Open the JSON query file and read it as a python dict.
         try:
             with open(query_file, 'r') as f:
@@ -129,9 +140,18 @@ def testAPI(base_url, entry_point, query_files, verbose, force, gold_disabled):
             print('INFO: Performing query: ' + str(query_dict))
 
         # Perform the query.
-        query_json = processQuery(query_url, header_dict, expect_pass, query_dict, verbose, force)
+        query_json = processQuery(query_url, header_dict, expect_pass, query_dict, verbose, force, expect_format)
         if verbose:
             print('INFO: Query response: ' + str(query_json))
+
+        if expect_format == 'tsv':
+            # Print out an error if the query failed.
+            if len(query_json) == 0:
+                print('ERROR: Query file ' + query_file + ' to ' + query_url + ' failed')
+                return 1
+
+            print('PASS: Query file ' + query_file + ' to ' + query_url + ' OK')
+            return 0
 
         if expect_pass:
             # Print out an error if the query failed.
@@ -163,7 +183,6 @@ def testAPI(base_url, entry_point, query_files, verbose, force, gold_disabled):
             query_response_array = query_json[response_tag]
             num_responses = len(query_response_array)
 
-            query_name = query_file.split('/')[-1]
             if not gold_disabled:
                 if gold_results.get(query_name):
                     if gold_results[query_name].get('records'):
