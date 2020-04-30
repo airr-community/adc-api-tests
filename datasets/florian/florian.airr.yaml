@@ -49,7 +49,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW01A_B_naive
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000788"
           value: "naive B cell"
@@ -109,7 +111,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW01A_B_memory
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000787"
           value: "memory B cell"
@@ -169,7 +173,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW01A_T_naive_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000895"
           value: "naive thymus-derived CD4-positive, alpha-beta T cell"
@@ -225,7 +231,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW01A_T_naive_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000900"
           value: "naive thymus-derived CD8-positive, alpha-beta T cell"
@@ -282,7 +290,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW01A_T_memory_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000897"
           value: "CD4-positive, alpha-beta memory T cell"
@@ -338,7 +348,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW01A_T_memory_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000909"
           value: "CD8-positive, alpha-beta memory T cell"
@@ -394,7 +406,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW01B_B_naive
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000788"
           value: "naive B cell"
@@ -454,7 +468,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW01B_B_memory
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000787"
           value: "memory B cell"
@@ -514,7 +530,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW01B_T_naive_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000895"
           value: "naive thymus-derived CD4-positive, alpha-beta T cell"
@@ -570,7 +588,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW01B_T_naive_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000900"
           value: "naive thymus-derived CD8-positive, alpha-beta T cell"
@@ -627,7 +647,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW01B_T_memory_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000897"
           value: "CD4-positive, alpha-beta memory T cell"
@@ -683,7 +705,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW01B_T_memory_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000909"
           value: "CD8-positive, alpha-beta memory T cell"
@@ -739,7 +763,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW02A_B_naive
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000788"
           value: "naive B cell"
@@ -799,7 +825,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW02A_B_memory
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000787"
           value: "memory B cell"
@@ -859,7 +887,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW02A_T_naive_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000895"
           value: "naive thymus-derived CD4-positive, alpha-beta T cell"
@@ -915,7 +945,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW02A_T_naive_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000900"
           value: "naive thymus-derived CD8-positive, alpha-beta T cell"
@@ -972,7 +1004,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW02A_T_memory_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000897"
           value: "CD4-positive, alpha-beta memory T cell"
@@ -1028,7 +1062,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW02A_T_memory_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000909"
           value: "CD8-positive, alpha-beta memory T cell"
@@ -1084,7 +1120,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW02B_B_naive
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000788"
           value: "naive B cell"
@@ -1144,7 +1182,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW02B_B_memory
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000787"
           value: "memory B cell"
@@ -1204,7 +1244,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW02B_T_naive_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000895"
           value: "naive thymus-derived CD4-positive, alpha-beta T cell"
@@ -1260,7 +1302,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW02B_T_naive_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000900"
           value: "naive thymus-derived CD8-positive, alpha-beta T cell"
@@ -1317,7 +1361,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW02B_T_memory_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000897"
           value: "CD4-positive, alpha-beta memory T cell"
@@ -1373,7 +1419,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW02B_T_memory_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000909"
           value: "CD8-positive, alpha-beta memory T cell"
@@ -1429,7 +1477,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW03A_B_naive
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000788"
           value: "naive B cell"
@@ -1489,7 +1539,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW03A_B_memory
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000787"
           value: "memory B cell"
@@ -1549,7 +1601,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW03A_T_naive_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000895"
           value: "naive thymus-derived CD4-positive, alpha-beta T cell"
@@ -1605,7 +1659,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW03A_T_naive_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000900"
           value: "naive thymus-derived CD8-positive, alpha-beta T cell"
@@ -1662,7 +1718,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW03A_T_memory_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000897"
           value: "CD4-positive, alpha-beta memory T cell"
@@ -1718,7 +1776,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW03A_T_memory_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000909"
           value: "CD8-positive, alpha-beta memory T cell"
@@ -1774,7 +1834,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW03B_B_naive
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000788"
           value: "naive B cell"
@@ -1834,7 +1896,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW03B_B_memory
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000787"
           value: "memory B cell"
@@ -1894,7 +1958,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW03B_T_naive_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000895"
           value: "naive thymus-derived CD4-positive, alpha-beta T cell"
@@ -1950,7 +2016,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW03B_T_naive_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000900"
           value: "naive thymus-derived CD8-positive, alpha-beta T cell"
@@ -2007,7 +2075,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW03B_T_memory_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000897"
           value: "CD4-positive, alpha-beta memory T cell"
@@ -2063,7 +2133,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW03B_T_memory_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000909"
           value: "CD8-positive, alpha-beta memory T cell"
@@ -2119,7 +2191,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW04A_B_naive
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000788"
           value: "naive B cell"
@@ -2179,7 +2253,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW04A_B_memory
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000787"
           value: "memory B cell"
@@ -2239,7 +2315,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW04A_T_naive_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000895"
           value: "naive thymus-derived CD4-positive, alpha-beta T cell"
@@ -2295,7 +2373,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW04A_T_naive_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000900"
           value: "naive thymus-derived CD8-positive, alpha-beta T cell"
@@ -2352,7 +2432,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW04A_T_memory_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000897"
           value: "CD4-positive, alpha-beta memory T cell"
@@ -2408,7 +2490,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW04A_T_memory_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000909"
           value: "CD8-positive, alpha-beta memory T cell"
@@ -2464,7 +2548,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW04B_B_naive
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000788"
           value: "naive B cell"
@@ -2524,7 +2610,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW04B_B_memory
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000787"
           value: "memory B cell"
@@ -2584,7 +2672,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW04B_T_naive_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000895"
           value: "naive thymus-derived CD4-positive, alpha-beta T cell"
@@ -2640,7 +2730,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW04B_T_naive_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000900"
           value: "naive thymus-derived CD8-positive, alpha-beta T cell"
@@ -2697,7 +2789,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW04B_T_memory_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000897"
           value: "CD4-positive, alpha-beta memory T cell"
@@ -2753,7 +2847,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW04B_T_memory_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000909"
           value: "CD8-positive, alpha-beta memory T cell"
@@ -2809,7 +2905,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW05A_B_naive
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000788"
           value: "naive B cell"
@@ -2869,7 +2967,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW05A_B_memory
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000787"
           value: "memory B cell"
@@ -2929,7 +3029,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW05A_T_naive_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000895"
           value: "naive thymus-derived CD4-positive, alpha-beta T cell"
@@ -2985,7 +3087,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW05A_T_naive_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000900"
           value: "naive thymus-derived CD8-positive, alpha-beta T cell"
@@ -3042,7 +3146,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW05A_T_memory_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000897"
           value: "CD4-positive, alpha-beta memory T cell"
@@ -3098,7 +3204,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW05A_T_memory_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000909"
           value: "CD8-positive, alpha-beta memory T cell"
@@ -3154,7 +3262,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW05B_B_naive
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000788"
           value: "naive B cell"
@@ -3214,7 +3324,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW05B_B_memory
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000787"
           value: "memory B cell"
@@ -3274,7 +3386,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW05B_T_naive_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000895"
           value: "naive thymus-derived CD4-positive, alpha-beta T cell"
@@ -3330,7 +3444,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW05B_T_naive_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000900"
           value: "naive thymus-derived CD8-positive, alpha-beta T cell"
@@ -3387,7 +3503,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW05B_T_memory_CD4
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000897"
           value: "CD4-positive, alpha-beta memory T cell"
@@ -3443,7 +3561,9 @@ Repertoire:
       link_type: twin
     sample:
       - sample_id: TW05B_T_memory_CD8
-        tissue: PBMC
+        tissue:
+          id: "UBERON:0013756"
+          value: "venous blood"
         cell_subset:
           id: "CL_0000909"
           value: "CD8-positive, alpha-beta memory T cell"
