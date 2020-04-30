@@ -64,3 +64,13 @@ pass-field-age-interval.json:
   records: 30
 pass-field-age-point.json:
   records: 12
+pass-size.json:
+  records: 10
+pass-from.json:
+  records: 50
+pass-include-miairr.json:
+  records: 10
+pass-include-airr-core.json:
+  records: 10
+pass-include-airr-schema.json:
+  records: 10

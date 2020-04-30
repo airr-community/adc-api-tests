@@ -14,3 +14,11 @@ pass-facets.json:
   records: 5
 pass-repertoire-download.json:
   format: tsv
+pass-size.json:
+  records: 10
+pass-include-miairr.json:
+  records: 10
+pass-include-airr-core.json:
+  records: 10
+pass-include-airr-schema.json:
+  records: 10
