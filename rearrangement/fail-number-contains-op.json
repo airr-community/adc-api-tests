@@ -1,0 +1,9 @@
+{
+   "filters": {
+     "op":"contains",
+     "content": {
+       "field":"junction_aa_length",
+       "value":45
+     }
+   }
+ }
