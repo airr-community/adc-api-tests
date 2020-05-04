@@ -74,7 +74,7 @@ if (__name__=="__main__"):
                 row['data_processing_id'] = args.data_processing_id
 
             fout.write('var ret = db.rearrangement.insertOne(' + json.dumps(row) + ');\n')
-            fout.write('db.rearrangement.updateOne({"_id":ret["insertedId"]},{$set:{"rearrangement_id":ret["insertedId"].str}});\n')
+            fout.write('db.rearrangement.updateOne({"_id":ret["insertedId"]},{$set:{"sequence_id":ret["insertedId"].str}});\n')
             seqCount += 1
             # don't let the files get too big
             if seqCount % 50000 == 0:

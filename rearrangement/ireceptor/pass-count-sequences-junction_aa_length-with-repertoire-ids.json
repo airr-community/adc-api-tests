@@ -3,10 +3,10 @@
     "op": "and",
     "content": [
       {
-        "op": "contains",
+        "op": "=",
         "content": {
-          "field": "d_call",
-          "value": "IGHD4-11*01"
+          "field": "junction_aa_length",
+          "value": 12
         }
       },
       {
@@ -21,5 +21,5 @@
       }
     ]
   },
-  "format": "tsv"
+  "facets": "repertoire_id"
 }

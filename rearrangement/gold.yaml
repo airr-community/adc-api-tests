@@ -7,8 +7,18 @@ pass-less-than-equals-op.json:
 pass-less-than-op.json:
   records: 336
 pass-junction_aa.json:
-  records: 60
+  records: 1
 pass-all-facets.json:
   records: 60
 pass-facets.json:
-  records: 6
+  records: 5
+pass-repertoire-download.json:
+  format: tsv
+pass-size.json:
+  records: 10
+pass-include-miairr.json:
+  records: 10
+pass-include-airr-core.json:
+  records: 10
+pass-include-airr-schema.json:
+  records: 10
