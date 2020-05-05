@@ -30,6 +30,11 @@ def processQuery(query_url, header_dict, expect_pass, query_dict={}, verbose=Fal
             url_response = url_response.decode(response.headers.get_content_charset())
         else:
             url_response = url_response.decode("utf-8")
+        # Check if pass when should have failed
+        if not expect_pass:
+            if response.code == 200:
+                # did not fail
+                return json.loads('[]')
 
     except urllib.error.HTTPError as e:
         if not expect_pass:
@@ -197,9 +202,9 @@ def testAPI(base_url, entry_point, query_files, verbose, force, gold_disabled):
             print("INFO: Received " + str(num_responses) + " " + response_tag + "s from query")
             print('PASS: Query file ' + query_file + ' to ' + query_url + ' OK')
         else:
-            # Print out an error if the query failed.
+            # Print out an error if the query passed when should have failed.
             if len(query_json) == 0:
-                print('ERROR: Query file ' + query_file + ' to ' + query_url + ' failed')
+                print('ERROR: Query file ' + query_file + ' to ' + query_url + ' passed when should have failed')
                 return 1
 
             print('PASS: Query file ' + query_file + ' to ' + query_url + ' OK')
