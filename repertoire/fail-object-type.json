@@ -1,0 +1,9 @@
+{
+  "filters": {
+    "op":"=",
+    "content": {
+      "field":"study",
+      "value":"1000"
+    }
+  }
+}
