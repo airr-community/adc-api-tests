@@ -63,6 +63,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -128,6 +129,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -192,6 +194,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -254,6 +257,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -315,6 +319,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -376,6 +381,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -438,6 +444,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -503,6 +510,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -567,6 +575,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -629,6 +638,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -690,6 +700,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -751,6 +762,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -813,6 +825,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -878,6 +891,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -942,6 +956,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -1004,6 +1019,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -1065,6 +1081,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -1126,6 +1143,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -1188,6 +1206,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -1253,6 +1272,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -1317,6 +1337,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -1379,6 +1400,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -1440,6 +1462,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -1501,6 +1524,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -1563,6 +1587,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -1628,6 +1653,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -1692,6 +1718,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -1754,6 +1781,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -1815,6 +1843,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -1876,6 +1905,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -1938,6 +1968,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -2003,6 +2034,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -2067,6 +2099,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -2129,6 +2162,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -2190,6 +2224,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -2251,6 +2286,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -2313,6 +2349,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -2378,6 +2415,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -2442,6 +2480,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -2504,6 +2543,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -2565,6 +2605,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -2626,6 +2667,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -2688,6 +2730,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -2753,6 +2796,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -2817,6 +2861,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -2879,6 +2924,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -2940,6 +2986,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -3001,6 +3048,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -3063,6 +3111,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -3128,6 +3177,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -3192,6 +3242,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -3254,6 +3305,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -3315,6 +3367,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -3376,6 +3429,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -3438,6 +3492,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -3503,6 +3558,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: IGH
         sequencing_platform: "Illumina MiSeq"
@@ -3567,6 +3623,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -3629,6 +3686,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -3690,6 +3748,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
@@ -3751,6 +3810,7 @@ Repertoire:
         template_class: RNA
         library_generation_method: "RT(specific+UMI)+PCR"
         complete_sequences: partial
+        physical_linkage: none
         pcr_target:
           - pcr_target_locus: TRB
         sequencing_platform: "Illumina MiSeq"
