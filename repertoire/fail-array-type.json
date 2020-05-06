@@ -1,0 +1,9 @@
+{
+  "filters": {
+    "op":"=",
+    "content": {
+      "field":"sample",
+      "value":"1000"
+    }
+  }
+}
