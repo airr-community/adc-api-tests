@@ -2,7 +2,7 @@
   "filters": {
         "op":"=",
         "content": {
-          "field":"subject.organism.value",
+          "field":"subject.species.value",
           "value":"Homo sapiens"
         }
   }
