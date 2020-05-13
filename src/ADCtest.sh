@@ -26,11 +26,19 @@ shift
 entry_point="$1"
 shift
 
+# Set up gold results testing
+gold=""
+if [ "$1" == "-f" ]
+then
+    shift
+    goldfile=$1
+    shift
+fi
+echo $goldfile
+
 # For the remainder of command line parameters, treat each as a JSON query.
 let "error_count=0"
 let "total_count=0"
-gold=""
-
 while [ "$1" != "" ]; do
     # Handle -g to turn off gold data testing.
     if [ "$1" == "-g" ] 
@@ -60,7 +68,7 @@ while [ "$1" != "" ]; do
     echo "Running test $1"
     filename="$1"
     # Run the python code (python 3 required) to test the API query
-    python3 $SCRIPT_DIR/$PYTHON_PROG -f $gold $verbosity $adc_url $entry_point $filename
+    python3 $SCRIPT_DIR/$PYTHON_PROG --goldfile=$goldfile --force $gold $verbosity $adc_url $entry_point $filename
     error_code=$?
     if [ $error_code -ne 0 ]
     then

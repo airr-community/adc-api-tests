@@ -63,11 +63,13 @@ def processQuery(query_url, header_dict, expect_pass, query_dict={}, verbose=Fal
     except json.decoder.JSONDecodeError as error:
         if force:
             print("WARNING: Unable to process JSON response: " + str(error))
-            return json_data
+            if verbose:
+                print("Warning: URL response = " + url_response)
+            return json.loads('[]')
         else:
             print("ERROR: Unable to process JSON response: " + str(error))
             if verbose:
-                print("ERROR: JSON = " + url_response)
+                print("ERROR: URL response = " + url_response)
             return json.loads('[]')
     except Exception as error:
         print("ERROR: Unable to process JSON response: " + str(error))
@@ -91,13 +93,20 @@ def initHTTP():
         getattr(ssl, '_create_unverified_context', None)): 
         ssl._create_default_https_context = ssl._create_unverified_context
 
-def testAPI(base_url, entry_point, query_files, verbose, force, gold_disabled):
+def testAPI(base_url, entry_point, query_files, verbose, force, gold_disabled, goldfile):
     # Ensure our HTTP set up has been done.
     initHTTP()
     # Get the HTTP header information (in the form of a dictionary)
     header_dict = getHeaderDict()
 
-    gold_results = yaml.safe_load(open(entry_point + '/gold.yaml', 'r'))
+    if not gold_disabled:
+        try:
+            gold_results = yaml.safe_load(open(goldfile, 'r'))
+        except Exception as error:
+            print("ERROR: Unable to open gold results file " + goldfile + ": " + str(error))
+            return 1
+        if verbose:
+            print("Info: Using gold file " + goldfile)
 
     # Build the full URL combining the URL and the entry point.
     query_url = base_url+'/'+entry_point
@@ -226,7 +235,6 @@ def getArguments():
     parser.add_argument("query_files")
     # Force JSON load flag
     parser.add_argument(
-        "-f",
         "--force",
         action="store_const",
         const=True,
@@ -237,6 +245,12 @@ def getArguments():
         "--golddisabled",
         action="store_true",
         help="Disable query result testing against the gold standard. Useful when testing an API that does not have the gold standard data set loaded.")
+    # Provide a gold standard file for test results
+    parser.add_argument(
+        "--goldfile",
+        dest="goldfile",
+        default="gold.yaml",
+        help="File to use for comparing the test results against")
     # Verbosity flag
     parser.add_argument(
         "-v",
@@ -255,7 +269,7 @@ if __name__ == "__main__":
     # Split the comma separated input string.
     query_files = options.query_files.split(',')
     # Perform the query analysis, gives us back a dictionary.
-    error_code = testAPI(options.base_url, options.entry_point, query_files, options.verbose, options.force, options.golddisabled)
+    error_code = testAPI(options.base_url, options.entry_point, query_files, options.verbose, options.force, options.golddisabled, options.goldfile)
     # Return success
     sys.exit(error_code)
 
