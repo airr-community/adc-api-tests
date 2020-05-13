@@ -22,3 +22,5 @@ pass-include-airr-core.json:
   records: 10
 pass-include-airr-schema.json:
   records: 10
+pass-v_call-airr.json:
+  format: tsv
