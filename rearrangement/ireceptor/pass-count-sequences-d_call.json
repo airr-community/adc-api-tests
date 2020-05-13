@@ -1,6 +1,6 @@
 {
   "filters": {
-    "op": "contains",
+    "op": "=",
     "content": {
       "field": "d_call",
       "value": "IGHD4-11*01"

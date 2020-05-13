@@ -3,7 +3,7 @@
     "op": "and",
     "content": [
       {
-        "op": "contains",
+        "op": "=",
         "content": {
           "field": "v_call",
           "value": "TRBV20-1*02"

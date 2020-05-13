@@ -1,6 +1,6 @@
 {
   "filters": {
-    "op": "contains",
+    "op": "=",
     "content": {
       "field": "v_call",
       "value": "IGHV4-34*01"

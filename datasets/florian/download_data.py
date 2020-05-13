@@ -38,16 +38,16 @@ def download_file(project_uuid, file_uuid, filename):
 
 # B-cell data
 # generate posit then download data
-download_file(project, bcell_file, '/work/data.zip')
-os.system("cd /work && unzip /work/data.zip")
-os.system("rm -f /work/data.zip")
-os.system("cd /work/" + bcell_job + " && ls *.airr.tsv.zip | xargs -n 1 unzip")
-os.system("chmod -R a+rw /work/" + bcell_job);
+download_file(project, bcell_file, '/data/work/data.zip')
+os.system("cd /data/work && unzip /data/work/data.zip")
+os.system("rm -f /data/work/data.zip")
+os.system("cd /data/work/" + bcell_job + " && ls *.airr.tsv.zip | xargs -n 1 unzip")
+os.system("chmod -R a+rw /data/work/" + bcell_job);
 
 # T-cell data
 # generate posit then download data
-download_file(project, tcell_file, '/work/data.zip')
-os.system("cd /work && unzip /work/data.zip")
-os.system("rm -f /work/data.zip")
-os.system("cd /work/" + tcell_job + " && ls *.airr.tsv.zip | xargs -n 1 unzip")
-os.system("chmod -R a+rw /work/" + tcell_job);
+download_file(project, tcell_file, '/data/work/data.zip')
+os.system("cd /data/work && unzip /data/work/data.zip")
+os.system("rm -f /data/work/data.zip")
+os.system("cd /data/work/" + tcell_job + " && ls *.airr.tsv.zip | xargs -n 1 unzip")
+os.system("chmod -R a+rw /data/work/" + tcell_job);
