@@ -28,6 +28,7 @@ shift
 
 # Set up gold results testing
 gold=""
+goldfile="${entry_point}/gold.yaml"
 if [ "$1" == "-f" ]
 then
     shift
