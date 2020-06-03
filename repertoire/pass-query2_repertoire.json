@@ -6,21 +6,21 @@
         "op":"=",
         "content": {
           "field":"subject.species.value",
-          "value":"Homo sapiens"
+          "label":"Homo sapiens"
         }
       },
       {
         "op":"=",
         "content": {
           "field":"sample.pcr_target.pcr_target_locus",
-          "value":"IGH"
+          "label":"IGH"
         }
       },
       {
         "op":"contains",
         "content": {
           "field":"subject.diagnosis.disease_diagnosis.value",
-          "value":"carcinoma"
+          "label":"carcinoma"
         }
       }
     ]

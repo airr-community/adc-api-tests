@@ -3,7 +3,7 @@
         "op":"=",
         "content": {
           "field":"subject.species.value",
-          "value":"Homo sapiens"
+          "label":"Homo sapiens"
         }
   }
 }
