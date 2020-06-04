@@ -2,8 +2,8 @@
   "filters": {
         "op":"=",
         "content": {
-          "field":"subject.species.value",
-          "label":"Homo sapiens"
+          "field":"subject.species.label",
+          "value":"Homo sapiens"
         }
   }
 }

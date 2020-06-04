@@ -5,22 +5,22 @@
       {
         "op":"=",
         "content": {
-          "field":"subject.species.value",
-          "label":"Homo sapiens"
+          "field":"subject.species.label",
+          "value":"Homo sapiens"
         }
       },
       {
         "op":"=",
         "content": {
           "field":"sample.pcr_target.pcr_target_locus",
-          "label":"IGH"
+          "value":"IGH"
         }
       },
       {
         "op":"contains",
         "content": {
-          "field":"subject.diagnosis.disease_diagnosis.value",
-          "label":"carcinoma"
+          "field":"subject.diagnosis.disease_diagnosis.label",
+          "value":"carcinoma"
         }
       }
     ]
