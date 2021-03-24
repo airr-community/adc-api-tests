@@ -182,6 +182,8 @@ def testAPI(base_url, entry_point, query_files, verbose, force, gold_disabled, g
                 response_tag = "Rearrangement"
             elif entry_point == "repertoire":
                 response_tag = "Repertoire"
+            elif entry_point == "clone":
+                response_tag = "Clone"
             else:
                 print("ERROR: I don't know how to check a '" + entry_point + "' API entry_point")
                 return 1
