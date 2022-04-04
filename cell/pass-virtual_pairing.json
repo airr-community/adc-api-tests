@@ -1,0 +1,10 @@
+{
+        "filters": {
+              "op":"=",
+              "content": {
+                "field":"virtual_pairing",
+                "value":false
+              }
+        },
+	"fields":["repertoire_id"]
+}

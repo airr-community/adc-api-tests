@@ -1,0 +1,7 @@
+{
+ "filters": {
+        "op":"=",
+        "content":{"field":"expression_study_method", "value":"single-cell transcriptome"}
+    },
+    "facets": "repertoire_id"
+}
