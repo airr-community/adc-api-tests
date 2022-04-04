@@ -1,0 +1,5 @@
+{
+  "filters": {
+      "op":">=", "content": { "field":"junction_aa_length", "value":14 }
+  }
+}

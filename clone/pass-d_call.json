@@ -1,0 +1,10 @@
+{
+        "filters": {
+              "op":"=",
+              "content": {
+                "field":"d_call",
+                "value":"TRBD1"
+              }
+        },
+	"fields":["repertoire_id","d_call"]
+}
