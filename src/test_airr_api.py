@@ -184,6 +184,10 @@ def testAPI(base_url, entry_point, query_files, verbose, force, gold_disabled, g
                 response_tag = "Repertoire"
             elif entry_point == "clone":
                 response_tag = "Clone"
+            elif entry_point == "cell":
+                response_tag = "Cell"
+            elif entry_point == "expression":
+                response_tag = "Expression"
             else:
                 print("ERROR: I don't know how to check a '" + entry_point + "' API entry_point")
                 return 1
