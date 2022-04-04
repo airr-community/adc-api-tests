@@ -35,7 +35,6 @@ then
     goldfile=$1
     shift
 fi
-echo $goldfile
 
 # For the remainder of command line parameters, treat each as a JSON query.
 let "error_count=0"
