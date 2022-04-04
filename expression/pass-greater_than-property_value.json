@@ -1,0 +1,10 @@
+{
+        "filters": {
+              "op":">",
+              "content": {
+                "field":"value",
+                "value":50
+              }
+        },
+	"fields":["repertoire_id"]
+}

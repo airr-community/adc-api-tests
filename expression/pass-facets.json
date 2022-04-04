@@ -1,0 +1,7 @@
+{
+ "filters": {
+        "op":">",
+        "content":{"field":"value", "value":50}
+    },
+    "facets": "repertoire_id"
+}

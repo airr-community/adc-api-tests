@@ -1,0 +1,10 @@
+{
+        "filters": {
+              "op":"=",
+              "content": {
+                "field":"property.label",
+                "value":"MALAT1"
+              }
+        },
+	"fields":["repertoire_id"]
+}

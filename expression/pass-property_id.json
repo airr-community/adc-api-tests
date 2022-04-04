@@ -1,0 +1,10 @@
+{
+        "filters": {
+              "op":"=",
+              "content": {
+                "field":"property.id",
+                "value":"ENSG:ENSG00000251562"
+              }
+        },
+	"fields":["repertoire_id"]
+}
