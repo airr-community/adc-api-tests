@@ -3,10 +3,10 @@
     "op":"and",
     "content": [
       {
-        "op":"contains",
+        "op":"=",
         "content": 
-          "field":"sequence_id",
-          "value":"TW0"
+          "field":"v_call",
+          "value":"TRBV1-1*01"
         }
       },
       {
