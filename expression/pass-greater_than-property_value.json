@@ -1,10 +1,24 @@
 {
-        "filters": {
-              "op":">",
-              "content": {
-                "field":"value",
-                "value":50
-              }
-        },
-	"fields":["repertoire_id"]
+    "filters":
+    {
+        "op": "and",
+        "content":
+	[
+            {
+                "op": "=",
+                "content": {
+                    "field": "property.label",
+                    "value": "MALAT1"
+                }
+            },
+            {
+                "op": ">",
+                "content": {
+                    "field": "value",
+                    "value": 1
+                }
+            }
+	]
+    },
+    "facets": "repertoire_id"
 }
